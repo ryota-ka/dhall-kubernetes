@@ -53,7 +53,7 @@ def main():
     if len(sys.argv) >= 2:
         out_dir = sys.argv[1]
     else:
-        out_dir = examples_dir
+        out_dir = os.path.join(examples_dir, 'out')
 
     clean_failures = []
     for example in examples:
